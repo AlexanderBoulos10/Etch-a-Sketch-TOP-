@@ -1,0 +1,19 @@
+div.container {
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+    flex-wrap: wrap;
+    border: 3px solid black;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.cell {
+    border: 1px solid blueviolet;
+    flex-grow: 1;
+}
