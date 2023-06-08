@@ -1,7 +1,54 @@
+body{
+    background-color: #3a7ca5;
+}
+
+section{
+    display: flex;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b4b7b1;
+    margin-bottom: 7px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.penChoice{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 3em;
+    color: #b4b7b1;
+}
+
+.userInteractions{
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 div.container {
     display: flex;
-    width: 1000px;
-    height: 1000px;
+    width: 700px;
+    height: 700px;
     flex-wrap: wrap;
     border: 3px solid black;
 }
@@ -14,6 +61,6 @@ div.container {
 }
 
 .cell {
-    border: 1px solid blueviolet;
+    border: 1px solid black;
     flex-grow: 1;
 }
