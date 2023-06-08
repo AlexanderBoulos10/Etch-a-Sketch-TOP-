@@ -37,11 +37,12 @@ input[type="color"]::-webkit-color-swatch {
     color: #b4b7b1;
 }
 
-.sliderValue{
+span{
     margin-top: 30px;
     font-size: 1.2rem;
     color: #3a0ca3;
     font-weight: 700;
+    text-align: center;
 }
 
 .userInteractions{
