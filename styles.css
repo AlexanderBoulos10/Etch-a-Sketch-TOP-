@@ -37,12 +37,20 @@ input[type="color"]::-webkit-color-swatch {
     color: #b4b7b1;
 }
 
+.sliderValue{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #3a0ca3;
+    font-weight: 700;
+}
+
 .userInteractions{
     margin: 0 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    text-align: center;
 }
 
 div.container {
@@ -63,4 +71,21 @@ div.container {
 .cell {
     border: 1px solid black;
     flex-grow: 1;
+}
+
+.clear{
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #b4b7b1;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(58, 124, 165);
+    padding: 20px 10px;
+    border: 3px solid black;
+    border-radius: 30px;
+    transition: background-color 0.25s;
+}
+
+.clear:hover{
+    background-color: #255572 ;
+    cursor: pointer;
 }

@@ -1,7 +1,7 @@
 const rangeInput = document.querySelector("#myRange");
 const sliderValue = document.querySelector("span");
 const container = document.querySelector(".container");
-const applyButton = document.querySelector("button");
+const clearButton = document.querySelector(".clear");
 let initialGrid = 50;
 let cells = 0;
 
@@ -21,7 +21,6 @@ function startingGrid(size) {
 }
 
 function createGrid() {
-  startingGrid(initialGrid);
   rangeInput.oninput = () => {
     deleteGrid(container);
     let rangeValue = rangeInput.value;
@@ -43,7 +42,7 @@ function createGrid() {
 }
 
 function deleteGrid(container) {
-  while (container.firstChild) {
+  while (container.firstChild != null) {
     container.removeChild(container.firstChild);
   }
 }
@@ -58,4 +57,13 @@ function colorGrid() {
   }
 }
 
+clearButton.addEventListener("click", () => {
+  console.log("clicked");
+  let bgColor = "rgb(58, 124, 165)";
+  for (let i = 0; i < rangeInput.value * rangeInput.value; i++) {
+    cells[i].style.backgroundColor = bgColor;
+  }
+});
+
+startingGrid(initialGrid);
 createGrid();
